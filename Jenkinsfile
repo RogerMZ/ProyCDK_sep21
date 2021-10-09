@@ -31,5 +31,11 @@ pipeline {
       }
     }
 
+    stage('Run Container') {
+      steps {
+        sh 'cat versionImage | xargs ./scripts/run.sh'
+      }
+    }
+
   }
 }
