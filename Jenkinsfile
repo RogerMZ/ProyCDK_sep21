@@ -44,5 +44,11 @@ pipeline {
       }
     }
 
+    stage('Stop Conainer') {
+      steps {
+        sh './scripts/stop.sh'
+      }
+    }
+
   }
 }
